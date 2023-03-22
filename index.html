@@ -1,59 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Document</title>
-</head>
-<body>
-        <section class="sec">
-            <header>
-                <a href="#"><img src="https://www.pepsi.com/en-us/uploads/images/logo-large.png?mtime=20180110134814" alt="" class="logo"></a>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Product</a></li>
-                    <li><a href="#">What's New</a></li>
-                    <li><a href="#">Newsletter</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </header>
-            <div class="content">
-                <div class="textBox">
-                    <h2>That's What<br><span>I Like</span></h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias nesciunt fugit dolorem nemo cum
-                        veritatis, repellendus ratione tempora officia id minus quaerat asperiores?
-                        Nulla quibusdam dolor officiis ad molestiae, quos laboriosam consequuntur, consectetur error atque
-                        omnis quae quasi corrupti hic.</p>
-                    <a href="#">View All Products</a>
-                </div>
-                <div class="imgBox">
-                    <img src="https://www.pepsi.com/en-us/uploads/images/can-pepsi.png?mtime=20180110134757" alt="" class="pepsi" >
-                    
-                </div>         
+  </head>
+  <body>
+    <section class="sec">
+      <sidebar class="sidebar">
+        <div class="side-content">
+          <div class="textBox">
+            <h2>UXbeam</h2>
+            <h4>The leap into early-on prototype optimization</h4>
+            <p>The leap into early-on prototype optimization</p>
+          </div>
+        </div>
+      </sidebar>
+
+      <main class="content">
+        <div class="top">
+          <img class="logo" src="./assets/logo-landing.png" alt="logo.png" />
+
+          <div class="main-content-textbox">
+            <h2>Welcome to our Beta!</h2>
+            <p>What Project Needs Brought You Here?</p>
+          </div>
+        </div>
+        <div class="body-content">
+          <div class="card">
+            <div class="icon">
+              <img src="./assets/01.svg" alt="Tree Testing Icon" />
             </div>
-            <ul class="thumb">
-                <li><img src="https://www.pepsi.com/en-us/uploads/images/can-pepsi.png?mtime=20180110134757" onclick="imgSlider('https://www.pepsi.com/en-us/uploads/images/can-pepsi.png?mtime=20180110134757');changeBgColor('#0062be')" ></li>
-                <li><img src="https://www.pepsi.com/en-us/uploads/images/Diet-Pepsi-v2_12oz.png?mtime=20180215173735" onclick="imgSlider('https://www.pepsi.com/en-us/uploads/images/Diet-Pepsi-v2_12oz.png?mtime=20180215173735');changeBgColor('#e60c2c')"></li>
-                <li><img src="https://www.pepsi.com/en-us/uploads/images/can-pepsi-zero-sugar.png" onclick="imgSlider('https://www.pepsi.com/en-us/uploads/images/can-pepsi-zero-sugar.png');changeBgColor('#1e1e1e')"></li>
-            </ul>
-            <ul class="sci">
-                <li><a href="#"><img src="facebook.png" alt=""></a></li>
-                <li><a href="#"><img src="twitter.png" alt=""></a></li>
-                <li><a href="#"><img src="instagram.png" alt=""></a></li>
-            </ul>
-        </section>
-        <script type="text/javascript">
-            function imgSlider(anything) {
-                document.querySelector('.pepsi').src =anything
-            }
-            function changeBgColor(color) {
-                const sec = document.querySelector('.sec');
-                sec.style.background = color;
-                
-            }
-        </script>
-    </body>
-</body>
+            <div class="card-textbox">
+              <h2>Card Sorting</h2>
+              <hr />
+            </div>
+          </div>
+          <div class="card">
+            <div class="icon">
+              <img src="./assets/3.svg" alt="Tree Testing Icon" />
+            </div>
+            <div class="card-textbox">
+              <h2>Tree Testing</h2>
+              <hr />
+            </div>
+          </div>
+          <div class="card">
+            <span>Tool#1</span>
+            <p class="coming-soon">Coming Soon</p>
+          </div>
+        </div>
+      </main>
+    </section>
+    <script type="text/javascript">
+      function imgSlider(anything) {
+        document.querySelector(".pepsi").src = anything;
+      }
+      function changeBgColor(color) {
+        const sec = document.querySelector(".sec");
+        sec.style.background = color;
+      }
+    </script>
+  </body>
 </html>
