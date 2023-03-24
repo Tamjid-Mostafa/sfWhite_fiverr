@@ -14,9 +14,9 @@ section {
   transition: 0.5s;
 }
 sidebar {
-    position: sticky;
-    top: 0;
-    left: 0;
+  position: sticky;
+  top: 0;
+  left: 0;
   display: flex;
   width: 50%;
   height: 100vh;
@@ -148,10 +148,14 @@ sidebar .side-content .textBox p {
   width: 25px;
   height: 25px;
 }
+
 .card-textbox {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.card-textbox a{
+  text-decoration: none;
 }
 .card-textbox > h2 {
   font-style: normal;
@@ -203,9 +207,9 @@ sidebar .side-content .textBox p {
 }
 
 @media screen and (max-width: 1280px) {
-    .body-content {
-        display: flex;
-        flex-direction: column;
-        gap: 54px;
-      }
+  .body-content {
+    display: flex;
+    flex-direction: column;
+    gap: 54px;
   }
+}
